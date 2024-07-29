@@ -99,7 +99,7 @@
 
         <!-- subnav -->
 
-        <div class="sectionBg ms-4 mt-2">
+        <div class="sectionBg ms-4 mt-2 overflow-x-scroll">
           <nav class=" py-0 shadow-lg">
             <div class="w-100">
               <div class="">
@@ -115,13 +115,19 @@
                       aria-selected="false">Achievements</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link subnav-link" href="#">Awards Gallery</a>
+                    <a class="nav-link subnav-link" href="#" id="awards-tab" data-bs-toggle="pill"
+                    data-bs-target="#awards" type="button" role="tab" aria-controls="awards"
+                    aria-selected="false">Awards Gallery</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link subnav-link" href="#">Charitable Work</a>
+                    <a class="nav-link subnav-link" href="#" id="charitable-tab" data-bs-toggle="pill"
+                    data-bs-target="#charitable" type="button" role="tab" aria-controls="charitable"
+                    aria-selected="false">Charitable Work</a>
                   </li>
                   <li class=" nav-item">
-                    <a class="nav-link subnav-link" href="#">Quotes</a>
+                    <a class="nav-link subnav-link" href="#" id="quotes-tab" data-bs-toggle="pill"
+                    data-bs-target="#quotes" type="button" role="tab" aria-controls="quotes"
+                    aria-selected="false">Quotes</a>
                   </li>
                 </ul>
               </div>
@@ -129,20 +135,6 @@
           </nav>
         </div>
         <div class="">
-          <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
-            </li>
-          </ul> -->
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
               tabindex="0">
@@ -259,16 +251,63 @@
               tabindex="0">
               <!-- Achievements -->
               <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
-                <h5 class="py-3 border-bottom mb-4 text-uppercase">BARRISTER MONWAR HOSSAIN IS</h5>
+                <h5 class="py-3 border-bottom mb-4 text-uppercase">Achievements</h5>
                 <div class="">
                   <img src="./assats/slider1.png" alt="" class="w-100">
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-              tabindex="0">...</div>
+            <!-- awards -->
+            <div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="awards-tab"
+              tabindex="0">
+              <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                <h5 class="py-3 border-bottom mb-4 text-uppercase">AWARD RECEIVED</h5>
+                <div class="row row-cols-lg-4 row-cols-md-2 row-gap-2 px-4">
+                  <div class="shadow py-4 px-2 h-100">
+                    <img src="./assats/award17.png" alt="" class="img-fluid">
+                    <p class="text-center mt-4 article">Who’s Who Bangladesh Award.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Charitable -->
+            <div class="tab-pane fade" id="charitable" role="tabpanel" aria-labelledby="charitable-tab"
+              tabindex="0">
+              <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                <h5 class="py-3 border-bottom mb-4 text-uppercase">Charitable Work</h5>
+                <div class="row row-cols-lg-4 row-cols-md-2 row-gap-2 px-4">
+                  <div class="p-3 shadow">
+                    <div class="">
+                      <img src="./assats/charitable_work1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body text-center">
+                      <h6 class="fs-6 fw-bold ">Work in Chattogram</h6>
+                      <p class="fs14px mt-3 article">Carried out huge charitable activities in Chattogram through the Greater Chattogram Association UK and Chattogram Nagorik Forum as the</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <!-- Quotes -->
+            <div class="tab-pane fade" id="quotes" role="tabpanel" aria-labelledby="quotes-tab"
+              tabindex="0">
+              <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                <h5 class="py-3 border-bottom mb-4 text-uppercase">Quotes</h5>
+                <div class="row row-cols-lg-3 row-cols-md-2 row-gap-2 px-4">
+                  <div class="rounded-3 h-100">
+                    <div class="card-body shadow py-3 h-100">
+                      <div class="d-flex justify-content-center">
+                        <img src="./assats/quotes-1.png" alt="" class="imageSize rounded-circle shadow-1-strong img-fluid">
+                      </div>
+                      <div class="text-center">
+                        <p class=" mb-0 px-4 my-4 mb-4 fs-5">ব্যারিস্টার মনোয়ার চট্টগ্রামের রাজনৈতিক, সামাজিক ও সাংস্কৃতিক আন্দোলনের সাথেও যুক্ত ছিলেন । তাঁর বক্তব্যের মধ্যে সারগর্ভ বিষয় থাকতো । আমি আশা: করবো আগামী দিনে আরো বৃহত্তর পরিবেশে তিনি নেতৃত্বের ভূমিকায় অবতীর্ণ হবেন ।</p>
+                        <p>- ড. অনুপম সেন</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>

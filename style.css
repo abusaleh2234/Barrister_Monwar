@@ -37,7 +37,7 @@ body{
     color: white;
 }
 .active{
-    color: white;
+    color: black;
 }
 .navbar-toggler{
     border: none;
@@ -68,4 +68,12 @@ body{
 }
 .text-justify{
     text-align: justify;
+}
+
+.imageSize{
+    width: 126px;
+    /* height: ; */
+}
+.fs14px{
+    font-size: 14px;
 }

@@ -22,7 +22,59 @@
 <body class="">
 
   <main class="sideGap">
-    <div class="d-lg-flex ">
+    <div class="d-lg-flex">
+      <div class="d-md-none">
+        <div class="sectionBg">
+          <nav class="navbar navbar-expand-lg py-0 shadow-lg">
+            <div class="w-100">
+              <div class=" d-flex justify-content-end align-items-center">
+                <!-- <h5 class="offcanvas-title fw-bold logo px-2 py-3" id="offcanvasNavbarLabel">BARRISTER MONWAR HOSSAIN</h5> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title fw-bold logo" id="offcanvasNavbarLabel">LOGO</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body nav">
+                  <ul class="navbar-nav  justify-content-between flex-grow-1">
+                    <li class="nav-item ">
+                      <a class="nav-link active" data-bs-toggle="pill" aria-current="page" href="#about">BARRISTER
+                        MONWAR HOSSAIN</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " data-bs-toggle="pill" href="#bangla">PROFILE (BANGLA)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">PROFILE (ENGLISH)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">BOOK</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#video" id="video-tab" data-bs-toggle="pill" data-bs-target="#video"
+                      type="button" role="tab" aria-controls="video" aria-selected="false">VIDEOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#blogs" id="blogs-tab" data-bs-toggle="pill" data-bs-target="#blogs"
+                        type="button" role="tab" aria-controls="blogs" aria-selected="false">BLOGS</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </div>
       <div class="sidebar sectionBg">
         <img class="w-100 pt-3" src="./assats/545.jpg" alt="">
         <div class="sideGap py_16px px-2">
@@ -77,7 +129,7 @@
                         MONWAR HOSSAIN</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">PROFILE (BANGLA)</a>
+                      <a class="nav-link " data-bs-toggle="pill" href="#bangla">PROFILE (BANGLA)</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link " href="#">PROFILE (ENGLISH)</a>
@@ -107,11 +159,12 @@
 
         <!-- main tab -->
         <div class="tab-content">
+          <!-- about -->
           <div id="about" class="tab-pane fade show active">
             <div class="">
               <!-- subnav -->
 
-              <div class="sectionBg ms-4 mt-2 overflow-x-scroll">
+              <div class="sectionBg ms-lg-4 mt-2 overflow-x-scroll">
                 <nav class=" py-0 shadow-lg">
                   <div class="w-100">
                     <div class="">
@@ -150,7 +203,7 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                   tabindex="0">
                   <!-- about section -->
-                  <div class="mt-3 px-3 pb-2 ms-4 sectionBg text-black">
+                  <div class="mt-3 px-3 pb-2 ms-lg-4 sectionBg text-black">
                     <h5 class="py-3 border-bottom mb-4 text-uppercase">BARRISTER MONWAR HOSSAIN IS</h5>
                     <div class="row">
                       <div class="col-md-6">
@@ -298,6 +351,140 @@
                           Prominent singer and social activist in Bangladesh
                         </p>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="achievements" role="tabpanel" aria-labelledby="achievements-tab"
+                  tabindex="0">
+                  <!-- Achievements -->
+                  <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                    <h5 class="py-3 border-bottom mb-4 text-uppercase">Achievements</h5>
+                    <div class="">
+                      <img src="./assats/slider1.png" alt="" class="w-100">
+                    </div>
+                  </div>
+                </div>
+                <!-- awards -->
+                <div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="awards-tab" tabindex="0">
+                  <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                    <h5 class="py-3 border-bottom mb-4 text-uppercase">AWARD RECEIVED</h5>
+                    <div class="row row-cols-lg-4 row-cols-md-2 row-gap-2 px-4">
+                      <div class="shadow py-4 px-2 h-100">
+                        <img src="./assats/award17.png" alt="" class="img-fluid">
+                        <p class="text-center mt-4 article">Who’s Who Bangladesh Award.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Charitable -->
+                <div class="tab-pane fade" id="charitable" role="tabpanel" aria-labelledby="charitable-tab"
+                  tabindex="0">
+                  <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                    <h5 class="py-3 border-bottom mb-4 text-uppercase">Charitable Work</h5>
+                    <div class="row row-cols-lg-4 row-cols-md-2 row-gap-2 px-4">
+                      <div class="p-3 shadow">
+                        <div class="">
+                          <img src="./assats/charitable_work1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body text-center">
+                          <h6 class="fs-6 fw-bold ">Work in Chattogram</h6>
+                          <p class="fs14px mt-3 article">Carried out huge charitable activities in Chattogram through
+                            the
+                            Greater Chattogram Association UK and Chattogram Nagorik Forum as the</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quotes -->
+                <div class="tab-pane fade" id="quotes" role="tabpanel" aria-labelledby="quotes-tab" tabindex="0">
+                  <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
+                    <h5 class="py-3 border-bottom mb-4 text-uppercase">Quotes</h5>
+                    <div class="row row-cols-lg-3 row-cols-md-2 row-gap-2 px-4">
+                      <div class="rounded-3 h-100">
+                        <div class="card-body shadow py-3 h-100">
+                          <div class="d-flex justify-content-center">
+                            <img src="./assats/quotes-1.png" alt=""
+                              class="imageSize rounded-circle shadow-1-strong img-fluid">
+                          </div>
+                          <div class="text-center">
+                            <p class=" mb-0 px-4 my-4 mb-4 fs-5">ব্যারিস্টার মনোয়ার চট্টগ্রামের রাজনৈতিক, সামাজিক ও
+                              সাংস্কৃতিক আন্দোলনের সাথেও যুক্ত ছিলেন । তাঁর বক্তব্যের মধ্যে সারগর্ভ বিষয় থাকতো । আমি
+                              আশা:
+                              করবো আগামী দিনে আরো বৃহত্তর পরিবেশে তিনি নেতৃত্বের ভূমিকায় অবতীর্ণ হবেন ।</p>
+                            <p>- ড. অনুপম সেন</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Bangla profile -->
+          <div id="bangla" class="tab-pane fade">
+            <div class="">
+              <!-- subnav -->
+
+              <div class="sectionBg ms-4 mt-2 overflow-x-scroll">
+                <nav class=" py-0 shadow-lg">
+                  <div class="w-100">
+                    <div class="">
+                      <ul class="d-flex list-unstyled justify-content-between m-0" id="pills-tab" role="tablist">
+                        <li class=" nav-item " role="presentation">
+                          <a class="nav-link subnav-link active" aria-current="page" href="#" id="pills-home-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                            aria-controls="pills-home" aria-selected="true">সংক্ষিপ্ত পরিচয়</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link subnav-link" href="#" id="achievements-tab" data-bs-toggle="pill"
+                            data-bs-target="#achievements" type="button" role="tab" aria-controls="achievements"
+                            aria-selected="false">Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link subnav-link" href="#" id="awards-tab" data-bs-toggle="pill"
+                            data-bs-target="#awards" type="button" role="tab" aria-controls="awards"
+                            aria-selected="false">Awards Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link subnav-link" href="#" id="charitable-tab" data-bs-toggle="pill"
+                            data-bs-target="#charitable" type="button" role="tab" aria-controls="charitable"
+                            aria-selected="false">Charitable Work</a>
+                        </li>
+                        <li class=" nav-item">
+                          <a class="nav-link subnav-link" href="#" id="quotes-tab" data-bs-toggle="pill"
+                            data-bs-target="#quotes" type="button" role="tab" aria-controls="quotes"
+                            aria-selected="false">Quotes</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                  tabindex="0">
+                  <!-- about section -->
+                  <div class="mt-3 px-3 pb-2 ms-4 sectionBg text-black">
+                    <h5 class="py-3 border-bottom mb-4 text-uppercase">ব্যারিস্টার মনোয়ার হোসেনের সংক্ষিপ্ত পরিচিতি</h5>
+                    <div class="">
+                      <p class="fs18px"><span class="fw-bold">পূর্ণ নাম:</span> মোহাম্মদ মনোয়ার হোসেন</p>
+                      <p class="fs18px"><span class="fw-bold">ইমেইল:</span> barrister.monwar@gmail.com</p>
+                      <p class="fs18px"><span class="fw-bold"> ঠিকানা:</span> শহর : ৮৩ মুরাদপুর, শহীদ জানে আলম সড়ক, পাঁচলাইশ, বোয়ালখালী : সৈয়দ ইবরাহিম এর বাড়ি , ইমামনগর , কধুরখীল,</p>
+                      <p class="fs18px"><span class="fw-bold"> জন্ম:</span>  ২৭ এপ্রিল</p>
+                      <p class="fs18px"><span class="fw-bold"> জন্মস্থান:</span>  মুরাদপুর, ষোলশহর, চট্টগ্রাম
+                      </p>
+                      <p class="fs18px"><span class="fw-bold"> পিতা: </span>  ডা: মোহাম্মদ নূরুল হুদা (চট্টগ্রামের প্রখ্যাত চিকিৎসক, বীর মুক্তিযোদ্ধা, সাবেক আওয়ামী লীগ নেতা)</p>
+                      <p class="fs18px"><span class="fw-bold">   মাতা: </span>সৈয়দা আকতার জাহান</p>
+                      <p class="fs18px"><span class="fw-bold">   ভাই-বোন: </span> ৭ ভাই, ২ বোন (দুই ভাই বীর মুক্তিযোদ্ধা ও সাবেক ছাত্র লীগ নেতা, প্রত্যেকেই প্রগতিশীল ও সংস্কৃতিমনা)</p>
+                      <p class="fs18px"><span class="fw-bold">   স্ত্রী:  </span>লুৎফুন্নাহার লীনা (শিক্ষকতা পেশায় নিয়োজিত, পাশাপাশি তিনি নানা কল্যাণধর্মী ও সামাজিক সংগঠনে জড়িত)</p>
+                      <p class="fs18px"><span class="fw-bold">  সন্তান: </span> ১ মেয়ে ও ১ ছেলে (মেয়ে ইংল্যান্ডে সলিসিটর, ছেলে ব্যারিস্টারী পড়ছে)</p>
+                      <p class="fs18px"><span class="fw-bold">  পেশা: </span> ইংল্যান্ডের স্বনামধন্য প্র্যাকটিসিং ব্যারিস্টার এবং লিঙ্কনস ইনের সদস্য । চেম্বার্স অব এম এম হোসেনের প্রধান । হাজার হাজার বাংলাদেশী নাগরিককে যুক্তরাজ্যে বসবাসের আইনি সহায়তা প্রদান । এরাই উল্লেখযোগ্য রেমিটেন্স পাঠিয়ে বাংলাদেশ এর অর্থনীতিতে অবদান রাখছেন এবং এরা বা এদের সন্তানেরা উচশিক্ষিত হচ্ছেন । অগণিত মানুষকে বিনা পারিশ্রমিকে আইনি সাহায্য প্রদান ।</p>
+                      <p class="fs18px"><span class="fw-bold">  শিক্ষা: </span>  এল এল বি (অনার্স) (লন্ডন), বিজনেস ল, মাস্টার অব কমার্স (ম্যানেজমেন্ট), (চট্টগ্রাম বিশ্ববিদ্যালয়)</p>
+                      <p class="fs18px"><span class="fw-bold">   শিক্ষা প্রতিষ্ঠান: </span> কেমব্রিজ বিশ্ববিদ্যালয়, লন্ডন মেট্রোপলিটন ইউনিভার্সিটি, বিপিপি বিশ্ববিদ্যালয় লন্ডন, চট্টগ্রাম বিশ্ববিদ্যালয়, চট্টগ্রাম সরকারি কমার্স কলেজ, চট্টগ্রাম নাসিরাবাদ সরকারি উচ্চ বিদ্যালয়, চট্টগ্রাম রহমানিয়া উচ্চ বিদ্যালয়, চট্টগ্রাম হামজারবাগ প্রাথমিক বিদ্যালয় । রাজনীতি - আজীবন মুক্তিযুদ্ধের চেতনায় উজ্জীবিত, প্রগতিশীল চেতনায় শাণিত ও বঙ্গবন্ধুর আদর্শে অবিচলিত । আওয়ামী আইনজীবী পরিষদ যুক্তরাজ্যের সদস্য । গত বিশ বছরেও বেশি সময় আওয়ামী লীগের রাজনীতির সাথেই আছেন যুক্তরাজ্যে ও বাংলাদেশে । প্রবাসে থাকাকালীন সর্বক্ষণ দেশের সেবা করেছেন, মানবাধিকারের কাজ করেছেন আন্তর্জাতিক পর্যায়ে । বাংলাদেশীদের নিয়ে কমিউনিটি ভিত্তিক সংগঠন ইত্যাদি করেছেন আর সাম্প্রদায়িকতা ও সন্ত্রাসের বিরুদ্ধে সোচ্চার থেকেছেন ।একটা বিরাট সময় দেশে এসে সমাজ সেবা ও সামাজিক উন্নয়নমূলক কর্মকান্ডের মাঝে ব্যস্ত থেকেছেন ।</p>
                     </div>
                   </div>
                 </div>

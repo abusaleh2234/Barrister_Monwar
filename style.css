@@ -1,3 +1,35 @@
 .sidebar{
     width: 331px;
 }
+.navbar-nav{
+    align-items: center;
+}
+.nav-item{
+    width: 100%; 
+    height: 100%;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-align: center;
+    transition: .5s;
+}
+.nav-item:hover{
+    
+    background-color: #337AB7;
+}
+.nav-link{
+    padding: 16px 0;
+    margin: 0;
+}
+.nav-link:hover{
+    color: white;
+}
+.active{
+    color: white;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}

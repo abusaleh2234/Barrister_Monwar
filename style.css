@@ -1,5 +1,6 @@
 body{
     background-color: #F5F5F5;
+    font-family: "Montserrat", sans-serif;
 }
 
 .sectionBg{
@@ -27,6 +28,9 @@ body{
 }
 .nav-item:hover{
     
+    background-color: #337AB7;
+}
+.bgP{
     background-color: #337AB7;
 }
 .nav-link{

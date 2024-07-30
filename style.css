@@ -92,3 +92,9 @@ body{
 .fs18px{
     font-size: 18px;
 }
+
+/* line hight */
+
+.line_h{
+    line-height: 35px;
+}

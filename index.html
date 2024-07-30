@@ -23,12 +23,13 @@
 
   <main class="sideGap">
     <div class="d-lg-flex">
-      <div class="d-md-none">
+      <!-- small navbar -->
+      <div class="d-lg-none">
         <div class="sectionBg">
           <nav class="navbar navbar-expand-lg py-0 shadow-lg">
             <div class="w-100">
-              <div class=" d-flex justify-content-end align-items-center">
-                <!-- <h5 class="offcanvas-title fw-bold logo px-2 py-3" id="offcanvasNavbarLabel">BARRISTER MONWAR HOSSAIN</h5> -->
+              <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="offcanvas-title fw-medium logo px-2 py-3" id="offcanvasNavbarLabel">BARRISTER MONWAR HOSSAIN</h5>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -37,7 +38,7 @@
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title fw-bold logo" id="offcanvasNavbarLabel">LOGO</h5>
+                  <h5 class="offcanvas-title fs-6 fw-medium logo" id="offcanvasNavbarLabel">BARRISTER MONWAR HOSSAIN</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body nav">
@@ -75,6 +76,7 @@
           </nav>
         </div>
       </div>
+      <!-- sidebar -->
       <div class="sidebar sectionBg">
         <img class="w-100 pt-3" src="./assats/545.jpg" alt="">
         <div class="sideGap py_16px px-2">
@@ -104,9 +106,9 @@
           <button class="btn btn-primary w-100" type="button">Read More</button>
         </div>
       </div>
-      <div class="w-100">
-        <!-- navbar -->
-        <div class="sectionBg">
+      <div class="w-100 position-relative">
+        <!--main navbar -->
+        <div class="sectionBg d-lg-block d-none">
           <nav class="navbar navbar-expand-lg py-0 shadow-lg">
             <div class="w-100">
               <div class=" d-flex justify-content-end align-items-center">
@@ -430,6 +432,7 @@
               <!-- subnav -->
 
               <div class="sectionBg ms-4 mt-2 overflow-x-scroll">
+                <!-- bangla section Nav -->
                 <nav class=" py-0 shadow-lg">
                   <div class="w-100">
                     <div class="">
@@ -465,9 +468,9 @@
                 </nav>
               </div>
               <div class="tab-content" id="pills-tabContent">
+                <!-- about bangla -->
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                   tabindex="0">
-                  <!-- about section -->
                   <div class="mt-3 px-3 pb-2 ms-4 sectionBg text-black">
                     <h5 class="py-3 border-bottom mb-4 text-uppercase">ব্যারিস্টার মনোয়ার হোসেনের সংক্ষিপ্ত পরিচিতি</h5>
                     <div class="">
@@ -488,9 +491,9 @@
                     </div>
                   </div>
                 </div>
+                <!-- Achievements -->
                 <div class="tab-pane fade" id="achievements" role="tabpanel" aria-labelledby="achievements-tab"
                   tabindex="0">
-                  <!-- Achievements -->
                   <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
                     <h5 class="py-3 border-bottom mb-4 text-uppercase">Achievements</h5>
                     <div class="">
@@ -557,7 +560,7 @@
               </div>
             </div>
           </div>
-          <!-- blog -->
+          <!-- video -->
           <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="blogs-tab" tabindex="0">
             <div class="py-2 px-3 w-100 mt-2 text-white fw-bold mx-4 text-center bgP">Video</div>
             <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
@@ -578,6 +581,8 @@
               </div>
             </div>
           </div>
+
+          <!-- blog -->
           <div class="tab-pane fade" id="blogs" role="tabpanel" aria-labelledby="blogs-tab" tabindex="0">
             <div class="py-2 px-3 w-100 mt-2 text-white fw-bold mx-4 text-center bgP">Blog</div>
             <div class="mt-3 px-3 pb-4 ms-4 sectionBg text-black">
@@ -624,7 +629,16 @@
         </div>
 
 
-
+        <footer class="mt-3 px-3 pt-3 ms-lg-4 sectionBg text-black rounded-2">
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <p className="text-center">
+              &copy; 2024 All right reserved by Barrister Monwar Hossain.
+          </p>
+          <p className="">
+              Design & Developed by Dhrubo Joyti Das.
+          </p>
+          </div>
+        </footer>
       </div>
     </div>
   </main>
